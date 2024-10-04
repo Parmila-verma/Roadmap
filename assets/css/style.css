@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: decimal;
+    /* outline: 1px dotted blue; */
+
+}
+
+.container {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content {
+    justify-content: center;
+}
+
+.align-item-center {
+    align-items: center;
+}
+
+.min-vh-100 {
+    min-width: 100vh;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+.burgur {
+    position: absolute;
+    left: 250px;
+    top: -30px;
+}
+
+.burgur1 {
+    position: absolute;
+    bottom: 55%;
+    left: 5%;
+}
+
+.burgur2 {
+    position: absolute;
+    right: 20%;
+    bottom: 80%;
+}
+
+.burgur3 {
+    position: absolute;
+    right: -15%;
+    bottom: 10%;
+}
+
+.mini-burgur {
+    position: absolute;
+    left: 20%;
+    bottom: 40%;
+}
+
+.mini-burgur-2 {
+    position: absolute;
+    top: 80%;
+    left: -15%;
+}
+
+.mini-burgur-3 {
+    position: absolute;
+    bottom: 90%;
+    left: 100%
+}
+
+.mini-burgur4 {
+    position: absolute;
+    right: 20%;
+    top: 80%;
+}
+
+
+.flex-grow {
+    flex-grow: 1;
+    background-color: rgba(246, 227, 0);
+}
+
+.mb-24 {
+    margin-bottom: 24px;
+}
+
+.timeline {
+    max-width: 1200px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.w-100 {
+    max-width: 100%;
+}
+
+.containerbox {
+    position: relative;
+    width: 50%;
+    padding: 10px  15px;
+}
+
+.content {
+    width: 100%;
+    background-color: #fff;
+    padding: 23px 27px;
+    border-radius: 10px;
+    max-width: 580px;
+}
+
+.header {
+    font-family: "Poppins";
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px;
+    text-align: center;
+   
+}
+
+.heading {
+    font-family: "Poppins";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: left;
+}
+
+li {
+    font-family: "Poppins";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+}
+
+.left {
+    position: relative;
+    left: 0;
+}
+
+.right {
+    position: relative;
+    left: 50%;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: red;
+    top: 20px;
+    bottom: 160px;
+    left: 50%;
+    margin-left: -3px;
+}
+.containerbox::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: -16px;
+    background-color: white;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+  .right::after{
+    left: -16px;
+    top: 0%;
+}
+.left::after{
+    top: 0;
+}
+@media (max-width:767.98px) {
+    .timeline::after{
+       left: 5%;
+    }
+    .right{
+        left: 10%;
+    }
+    .left{
+        left: 10%;
+    }
+    
+   .timeline::after {
+    bottom: 180px;
+   } 
+   .left::after{
+    left: -40px;
+   }
+   .right::after{
+    left: -40px;
+   }
+   .containerbox {
+    width: 90%;
+   }
+   .burgur,
+   .burgur1,
+   .burgur2,
+   .burgur3,
+   .mini-burgur,
+   .mini-burgur-2,
+   .mini-burgur-3,
+   .mini-burgur4{
+      opacity: 0;  
+   }
+   .mini-burgur-3{
+    position: absolute;
+    left: 0%;
+   }
+
+   .burgur3{
+    position: absolute;
+    left: 0%;
+   }
+}
+
+@media (min-width:768px) and (max-width:992px){
+    .timeline::after{
+        bottom: 200px;
+    }
+    .mini-burgur-3{
+        position: absolute;
+        left: 0%;
+       }
+    
+       .burgur3{
+        position: absolute;
+        left: 0%;
+       }
+       .burgur{
+        position: absolute;
+        left: 0;
+       }
+}
+@media (min-width:992px) {
+    .mini-burgur-3{
+        position: absolute;
+        left: 80%;
+       }
+    
+       .burgur3{
+        position: absolute;
+        left: 90%;
+       }
+}
