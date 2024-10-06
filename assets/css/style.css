@@ -110,7 +110,7 @@
 .containerbox {
     position: relative;
     width: 50%;
-    padding: 10px  15px;
+    padding: 10px  50px;
 }
 
 .content {
@@ -127,6 +127,7 @@
     font-weight: 700;
     line-height: 72px;
     text-align: center;
+    padding-bottom: 50px;
    
 }
 
@@ -165,6 +166,8 @@ li {
     bottom: 160px;
     left: 50%;
     margin-left: -3px;
+    /* height: auto;
+    min-height: 520px; */
 }
 .containerbox::after {
     content: '';
@@ -184,6 +187,19 @@ li {
 .left::after{
     top: 0;
 }
+@media (max-width:576px) {
+    .containerbox{
+        padding: 10px 20px;
+    }
+    .timeline::after{
+        height: 520px;
+    }
+}
+@media (min-width:576px) and (max-width:767.98px){
+    .timeline::after{
+        height: 530px;
+    }
+}
 @media (max-width:767.98px) {
     .timeline::after{
        left: 5%;
@@ -202,7 +218,7 @@ li {
     left: -40px;
    }
    .right::after{
-    left: -40px;
+    left: -43px;
    }
    .containerbox {
     width: 90%;
@@ -215,7 +231,7 @@ li {
    .mini-burgur-2,
    .mini-burgur-3,
    .mini-burgur4{
-      opacity: 0;  
+      display: none;
    }
    .mini-burgur-3{
     position: absolute;
@@ -230,11 +246,12 @@ li {
 
 @media (min-width:768px) and (max-width:992px){
     .timeline::after{
-        bottom: 200px;
+        /* bottom: 200px; */
+        height:730px
     }
     .mini-burgur-3{
         position: absolute;
-        left: 0%;
+        left: 50%;
        }
     
        .burgur3{
@@ -246,14 +263,4 @@ li {
         left: 0;
        }
 }
-@media (min-width:992px) {
-    .mini-burgur-3{
-        position: absolute;
-        left: 80%;
-       }
-    
-       .burgur3{
-        position: absolute;
-        left: 90%;
-       }
-}
+
